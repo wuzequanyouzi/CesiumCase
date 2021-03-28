@@ -92,7 +92,7 @@ export default {
 						console.log(Matrix4.fromTranslation(translation));
 
             loadingIndicator.style.display = 'none';
-
+				
         })
         .otherwise(function (error) {
             loadingIndicator.style.display = 'none';
@@ -157,7 +157,7 @@ export default {
 				// })
 			}, 5000)
 
-				//获取相机视角
+			//获取相机视角
 			var handler1 = new ScreenSpaceEventHandler(this.viewer.scene.canvas);
 			handler1.setInputAction(function (clickEvent) {
       	// that.viewer.scene.globe.depthTestAgainstTerrain = true;
